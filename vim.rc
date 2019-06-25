@@ -1,0 +1,50 @@
+set nocompatible              " required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+au VimEnter *  NERDTree
+
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"desde aca
+" This is the Vundle package, which can be found on GitHub.
+" For GitHub repos, you specify plugins using the
+" 'user/repository' format
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'gmarik/vundle'
+Plugin 'vim-pug'
+Plugin 'bling/vim-airline'
+Plugin 'lokaltog/vim-powerline'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'tpope/vim-vividchalk'
+Plugin 'mattn/emmet-vim'
+" We could also add repositories with a ".git" extension
+"Plugin 'scrooloose/nerdtree.git'
+" To get plugins from Vim Scripts, you can reference the plugin
+" by name as it appears on the site
+Plugin 'Buffergator'
+
+" Now we can turn our filetype functionality back on
+filetype plugin indent on
+
+Plugin 'pangloss/vim-javascript'
+set background=dark
+"colorscheme  Chasing_Logic
